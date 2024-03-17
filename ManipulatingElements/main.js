@@ -26,3 +26,14 @@ let list = document.createElement("li");
 list.innerHTML = "Contact";
 
 menu.appendChild(list);
+
+//------------------------------------------------------------------------
+
+// To get the text content of a node and its decendents, you can use the 
+// textContent property.
+
+console.log(menu.textContent);
+
+// menu.innerHTML = "<h1>Hello</h1>";
+
+menu.insertAdjacentElement("beforeend", "<li>Address</li>");
