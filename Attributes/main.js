@@ -13,3 +13,9 @@ console.log(inputBox);
 // check the existance of the attribute
 
 console.log(inputBox.hasAttribute("class"));
+
+// remove an attribute
+
+inputBox.removeAttribute("placeholder");
+
+console.log(inputBox.style);
