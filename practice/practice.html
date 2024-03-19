@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practicing DOM</title>
+</head>
+<body>
+    <h1 onclick="handleclick2()">PRACTICING DOM</h1>
+    <p>This HTML page is for use in examples in document. You may use this domain
+        in literature without prior coordination or asking permission.
+    </p>
+    <br>
+    <a href="info.html">More Information.</a>
+
+    <script>
+        let h2 = document.createElement('h2');
+        h2.setAttribute('id', 'sub-heading');
+        h2.setAttribute('class', 'heading-class');
+        h2.innerText = "This is a sub-heading";
+        document.body.appendChild(h2);
+    </script>
+
+    <script>
+        const target = document.querySelector('body');
+
+        function handleClick() {
+            console.log("clicked the body");
+        }
+
+        target.addEventListener('click', handleClick);
+    </script>
+
+    <script>
+        function handleclick2() {
+            console.log("clicked on the heading");
+        }
+    </script>
+</body>
+</html>
